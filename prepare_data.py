@@ -12,6 +12,7 @@ batch_size=50
 train_generator = create_train_generator('data/train',batch_size)
 #validation dataset generator
 validation_generator = create_validation_generator('data/test',batch_size)
+#train generator
 nb_train_samples = len(train_generator.filenames) 
 num_classes = len(train_generator.class_indices) 
 predict_size_train = int(math.ceil(nb_train_samples / batch_size)) 
